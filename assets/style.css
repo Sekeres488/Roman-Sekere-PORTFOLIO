@@ -10,3 +10,145 @@
     --zvyraznene:#9A031E;
     --pismo: #000000;
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--pozadie);
+    font-family:'Poppins', sans-serif;
+    color:var(--pismo);
+}
+
+.menu{
+    background:var(--menu);
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:15px 5px;
+    position:sticky;
+    top:0;
+}
+
+.menu a{
+    text-decoration:none;
+    color:black;
+    font-family:'Bungee', cursive;
+    font-size:12px;
+}
+
+.hero{
+    text-align:center;
+    padding:40px 20px 20px;
+}
+
+.hero h1{
+    font-family:'Bungee', cursive;
+    font-size:38px;
+    line-height:1.1;
+}
+
+.hero p{
+    margin-top:15px;
+    color:var(--zvyraznene);
+    font-family:'Jockey One', sans-serif;
+    font-size:20px;
+}
+
+.about{
+    text-align:center;
+    padding:20px;
+}
+
+.about h2{
+    color:var(--zvyraznene);
+    font-family:'Bungee', cursive;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:300px;
+    margin:auto;
+    font-weight:600;
+    line-height:1.6;
+}
+
+button{
+    background:var(--tlacidlo);
+    border:none;
+    padding:15px 25px;
+    margin-top:25px;
+    font-family:'Bungee', cursive;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.contact-btn{
+    text-align:center;
+    margin-top:10px;
+}
+
+.projects{
+    padding:20px;
+    text-align:center;
+}
+
+.projects h2{
+    color:var(--zvyraznene);
+    font-family:'Bungee', cursive;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:var(--okno);
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:25px;
+}
+
+.card h3{
+    color:var(--zvyraznene);
+    font-family:'Bungee', cursive;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-weight:600;
+    line-height:1.5;
+    margin-bottom:10px;
+}
+
+.card span{
+    color:var(--zvyraznene);
+    font-weight:700;
+}
+
+.all-projects{
+    margin-top:10px;
+}
+
+.cta{
+    text-align:center;
+    padding:20px 20px 40px;
+}
+
+.cta h2{
+    color:var(--zvyraznene);
+    font-family:'Jockey One', sans-serif;
+    font-size:32px;
+}
