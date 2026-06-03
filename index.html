@@ -10,22 +10,23 @@
 <body>
 
   <header>
+    <button class="menu-toggle" aria-label="Otvoriť menu" aria-expanded="false">☰</button>
     <nav class="menu">
-      <a href="#">DOMOV</a>
-      <a href="#">O MNE</a>
-      <a href="#">KONTAKT</a>
-      <a href="#">PORTFÓLIO</a>
+      <a href="index.html">DOMOV</a>
+      <a href="o_mne.html">O MNE</a>
+      <a href="kontakt.html">KONTAKT</a>
+      <a href="portfolio.html">PORTFÓLIO</a>
     </nav>
   </header>
 
   <main>
 
-    <section class="hero">
+    <section id="domov" class="hero">
       <h1>ROMAN<br>SEKEREŠ</h1>
       <p>SOM GRAFIK DIGITÁLNYCH MÉDIÍ.</p>
     </section>
 
-    <section class="about">
+    <section id="o-mne" class="about">
       <h2>NIEČO O MNE</h2>
 
       <p>
@@ -34,14 +35,14 @@
         ktoré majú energiu a štýl.
       </p>
 
-      <button>VIAC O MNE</button>
+      <button type="button" onclick="location.href='o_mne.html'">VIAC O MNE</button>
     </section>
 
-    <section class="contact-btn">
-      <button>KONTAKTUJ MA</button>
+    <section id="kontakt" class="contact-btn">
+      <button type="button" onclick="location.href='kontakt.html'">KONTAKTUJ MA</button>
     </section>
 
-    <section class="projects">
+    <section id="portfolio" class="projects">
       <h2>MOJE NAJLEPŠIE PROJEKTY</h2>
 
       <div class="card">
@@ -83,15 +84,16 @@
         <span>Canva</span>
       </div>
 
-      <button class="all-projects">VŠETKY PROJEKTY</button>
+      <button type="button" class="all-projects" onclick="location.href='portfolio.html'">VŠETKY PROJEKTY</button>
     </section>
 
     <section class="cta">
       <h2>Máte projekt? Ozvite sa!</h2>
-      <button>KONTAKTOVAŤ</button>
+      <button type="button" onclick="location.href='kontakt.html'">KONTAKTOVAŤ</button>
     </section>
 
   </main>
 
 </body>
+<script src="assets/script.js"></script>
 </html>

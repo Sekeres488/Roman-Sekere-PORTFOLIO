@@ -1,73 +1,85 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <link rel="stylesheet" href="assets/style3.css">
+
+    <link rel="stylesheet" href="assets/style.css">
 </head>
- 
 <body>
- 
-   
-    <nav>
-        <a href="#">DOMOV</a>
-        <a href="#">O MNE</a>
-        <a href="#">KONTAKT</a>
-        <a href="#">PORTFÓLIO</a>
+
+<header>
+    <button class="menu-toggle" aria-label="Otvoriť menu" aria-expanded="false">☰</button>
+    <nav class="menu">
+        <a href="index.html">DOMOV</a>
+        <a href="o_mne.html">O MNE</a>
+        <a href="kontakt.html">KONTAKT</a>
+        <a href="portfolio.html">PORTFÓLIO</a>
     </nav>
- 
-  
+</header>
+
+<main>
+
     <section class="kontakt">
- 
+
         <h1>KONTAKT</h1>
- 
+
         <h2>NEVÁHAJ A OZVI SA MI!</h2>
- 
-        <form>
- 
-            <label>MENO:</label>
-            <input type="text">
- 
-            <label>EMAIL:</label>
-            <input type="email">
- 
-            <label>SPRÁVA:</label>
-            <textarea></textarea>
- 
-            <button type="submit">ODOSLAŤ</button>
- 
+
+        <form class="kontakt-form">
+
+            <div class="input-group">
+                <label for="meno">MENO:</label>
+                <input type="text" id="meno" name="meno">
+            </div>
+
+            <div class="input-group">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="message-group">
+                <label for="sprava">SPRÁVA:</label>
+                <textarea id="sprava" name="sprava"></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                ODOSLAŤ
+            </button>
+
         </form>
- 
-        
-        <div class="info">
- 
-            <h2>MOJE KONTAKNÉ INFORMÁCIE</h2>
- 
-            <div class="box">
-                <span>EMAIL:</span>
-                <p>roman.sekeres@piaristi-pd.sk</p>
-            </div>
- 
-            <div class="box">
-                <span>TELEFÓN:</span>
-                <p>0944797187</p>
-            </div>
- 
-        </div>
- 
-     
-        <div class="social">
- 
-            <h2>MOJE SOCIÁLNE SIETE</h2>
- 
-            <a href="#">INSTAGRAM</a>
-            <a href="#">FACEBOOK</a>
-            <a href="#">GITHUB</a>
- 
-        </div>
- 
+
     </section>
- 
+
+    <section class="info">
+
+        <h2>MOJE KONTAKNÉ INFORMÁCIE</h2>
+
+        <div class="info-box">
+            <span>EMAIL:</span>
+            <p>roman.sekeres@piaristi-pd.sk</p>
+        </div>
+
+        <div class="info-box">
+            <span>TELEFÓN:</span>
+            <p>0944797187</p>
+        </div>
+
+    </section>
+
+    <section class="social">
+
+        <h2>MOJE SOCIÁLNE SIETE</h2>
+
+        <a href="#" class="social-btn">INSTAGRAM</a>
+        <a href="#" class="social-btn">FACEBOOK</a>
+        <a href="#" class="social-btn">GITHUB</a>
+
+    </section>
+
+</main>
+
 </body>
-</html
+<script src="assets/script.js"></script>
+</html>
