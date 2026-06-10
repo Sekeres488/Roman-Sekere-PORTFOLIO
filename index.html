@@ -4,13 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roman Sekereš</title>
-
-<link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
   <header>
-    <button class="menu-toggle" aria-label="Otvoriť menu" aria-expanded="false">☰</button>
     <nav class="menu">
       <a href="index.html">DOMOV</a>
       <a href="o_mne.html">O MNE</a>
@@ -19,81 +16,57 @@
     </nav>
   </header>
 
-  <main>
+  <main class="home-page">
+    <section class="home-left">
+      <section id="domov" class="hero">
+        <h1>ROMAN<br>SEKEREŠ</h1>
+        <p>SOM GRAFIK DIGITÁLNYCH MÉDIÍ.</p>
+      </section>
 
-    <section id="domov" class="hero">
-      <h1>ROMAN<br>SEKEREŠ</h1>
-      <p>SOM GRAFIK DIGITÁLNYCH MÉDIÍ.</p>
+      <section id="o-mne" class="about">
+        <h2>NIEČO O MNE</h2>
+        <p>
+          Volám sa Roman, mám 16 rokov a venujem sa tvorbe a strihu videí.
+          Baví ma meniť obyčajné zábery na dynamické videá,
+          ktoré majú energiu a štýl.
+        </p>
+        <button type="button" onclick="location.href='o_mne.html'">VIAC O MNE</button>
+      </section>
+
+      <section id="kontakt" class="contact-btn">
+        <button type="button" onclick="location.href='kontakt.html'">KONTAKTUJ MA</button>
+      </section>
+
+      <section class="cta">
+        <h2>Máte projekt? Ozvite sa!</h2>
+        <button type="button" onclick="location.href='kontakt.html'">KONTAKTOVAŤ</button>
+      </section>
     </section>
 
-    <section id="o-mne" class="about">
-      <h2>NIEČO O MNE</h2>
-
-      <p>
-        Volám sa Roman, mám 16 rokov a venujem sa tvorbe a strihu videí.
-        Baví ma meniť obyčajné zábery na dynamické videá,
-        ktoré majú energiu a štýl.
-      </p>
-
-      <button type="button" onclick="location.href='o_mne.html'">VIAC O MNE</button>
-    </section>
-
-    <section id="kontakt" class="contact-btn">
-      <button type="button" onclick="location.href='kontakt.html'">KONTAKTUJ MA</button>
-    </section>
-
-    <section id="portfolio" class="projects">
+    <section id="portfolio" class="projects home-projects">
       <h2>MOJE NAJLEPŠIE PROJEKTY</h2>
-
-      <div class="card">
-        <h3>PERSPEKTÍVA</h3>
-
-       <img src="assets/images/Snímka obrazovky 2026-04-08 111301.png" alt="perspektiva">
-
-        <p>
-          Perspektíva určuje hĺbku a priestor,
-          dodáva obrazu realitu a dynamiku.
-        </p>
-
-        <span>Adobe Illustrator</span>
+      <div class="home-project-list">
+        <div class="card">
+          <h3>PERSPEKTÍVA</h3>
+          <img src="assets/images/Snímka obrazovky 2026-04-08 111301.png" alt="Perspektíva">
+          <p>Perspektíva určuje hĺbku a priestor, dodáva obrazu realitu a dynamiku.</p>
+          <span>Adobe Illustrator</span>
+        </div>
+        <div class="card">
+          <h3>KALENDÁR</h3>
+          <img src="assets/images/Snímka obrazovky 2026-04-08 122226.png" alt="Kalendár">
+          <p>Kalendár spája funkčnosť, prehľadnosť a estetiku.</p>
+          <span>Adobe Photoshop</span>
+        </div>
+        <div class="card">
+          <h3>LOGO</h3>
+          <img src="assets/images/Snímka obrazovky 2026-04-08 123602.png" alt="Logo">
+          <p>Logo je vizuálny symbol reprezentujúci značku alebo myšlienku.</p>
+          <span>Canva</span>
+        </div>
       </div>
-
-      <div class="card">
-        <h3>KALENDÁR</h3>
-
-        <img src="assets/images/Snímka obrazovky 2026-04-08 122226.png" alt="Kalendár">
-
-        <p>
-          Kalendár spája funkčnosť,
-          prehľadnosť a estetiku.
-        </p>
-
-        <span>Adobe Photoshop</span>
-      </div>
-
-      <div class="card">
-        <h3>LOGO</h3>
-
-        <img src="assets/images/Snímka obrazovky 2026-04-08 123602.png" alt="Logo">
-
-        <p>
-          Logo je vizuálny symbol reprezentujúci
-          značku alebo myšlienku.
-        </p>
-
-        <span>Canva</span>
-      </div>
-
       <button type="button" class="all-projects" onclick="location.href='portfolio.html'">VŠETKY PROJEKTY</button>
     </section>
-
-    <section class="cta">
-      <h2>Máte projekt? Ozvite sa!</h2>
-      <button type="button" onclick="location.href='kontakt.html'">KONTAKTOVAŤ</button>
-    </section>
-
   </main>
-
 </body>
-<script src="assets/script.js"></script>
 </html>

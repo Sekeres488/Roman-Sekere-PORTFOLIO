@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O mne</title>
-
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
   <header>
-    <button class="menu-toggle" aria-label="Otvoriť menu" aria-expanded="false">☰</button>
     <nav class="menu">
       <a href="index.html">DOMOV</a>
       <a href="o_mne.html">O MNE</a>
@@ -19,14 +16,32 @@
     </nav>
   </header>
 
-  <main>
+  <main class="about-page">
+    <h1 class="about-title">O MNE</h1>
 
-    <section class="about-section">
+    <section class="about-desktop-grid">
+      <div class="about-photo-box">
+        <img src="assets/images/Snímka obrazovky 2026-05-27 123138.png" alt="Profilová fotka" class="profile-img top-img">
+      </div>
 
-      <h1>O MNE</h1>
+      <section class="skills">
+        <h2>MOJE ZRUČNOSTI</h2>
+        <div class="skill">
+          <div class="skill-name"><span>PREMIERE PRO</span><span>45%</span></div>
+          <div class="progress"><div class="fill fill1"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name"><span>ILLUSTRATOR</span><span>70%</span></div>
+          <div class="progress"><div class="fill fill2"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name"><span>PHOTOSHOP</span><span>75%</span></div>
+          <div class="progress"><div class="fill fill3"></div></div>
+        </div>
+      </section>
+    </section>
 
-      <img src="assets/images/Snímka obrazovky 2026-05-27 123138.png" alt="Profilová fotka" class="profile-img">
-
+    <section class="about-text-row">
       <div class="text-box">
         <p>
           Baví ma hrať sa s rytmom, farebnou úpravou,
@@ -36,7 +51,6 @@
           emóciu aj príbeh.
         </p>
       </div>
-
       <div class="text-box">
         <p>
           Pracujem aj u Illustratora i Photoshope, kde rád tvorím
@@ -46,52 +60,10 @@
           ako vyjadriť nápady a emócie.
         </p>
       </div>
-
+      <div class="about-photo-box bottom-photo-box">
+        <img src="assets/images/Snímka obrazovky 2026-05-27 123329.png" alt="Profilová fotka" class="profile-img bottom-img">
+      </div>
     </section>
-
-    <section class="skills">
-
-      <h2>MOJE ZRUČNOSTI</h2>
-
-      <div class="skill">
-        <div class="skill-name">
-          <span>PREMIERE PRO</span>
-          <span>45%</span>
-        </div>
-
-        <div class="progress">
-          <div class="fill fill1"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">
-          <span>ILLUSTRATOR</span>
-          <span>70%</span>
-        </div>
-
-        <div class="progress">
-          <div class="fill fill2"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">
-          <span>PHOTOSHOP</span>
-          <span>75%</span>
-        </div>
-
-        <div class="progress">
-          <div class="fill fill3"></div>
-        </div>
-      </div>
-
-      <img src="assets/images/Snímka obrazovky 2026-05-27 123329.png" alt="Profilová fotka" class="profile-img bottom-img">
-
-    </section>
-
   </main>
-
 </body>
-<script src="assets/script.js"></script>
 </html>
